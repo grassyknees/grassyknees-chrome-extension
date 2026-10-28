@@ -31,7 +31,6 @@ Privacy: no account, no analytics, no tracking. The extension reads the public l
 
 Metros covered: New York, Los Angeles, Chicago, Dallas–Fort Worth, Houston, Atlanta, Washington DC, Miami, Philadelphia, Phoenix, Boston, Riverside, San Francisco, Detroit, Seattle, Minneapolis, Tampa, San Diego, Denver, Orlando, Charlotte, Baltimore, St. Louis, San Antonio, Austin, Portland, Sacramento, Pittsburgh, Las Vegas, Cincinnati, Kansas City, Columbus, Indianapolis, Nashville, Cleveland, San Jose, Virginia Beach, Jacksonville, Providence, Raleigh, Milwaukee and Oklahoma City.
 
-Organizers can list their events for free at grassyknees.com.
 
 ## URLs
 - Homepage URL: https://grassyknees.com/?utm_source=chrome-web-store
