@@ -3,7 +3,7 @@
 ## Name (manifest `name`, ≤75)
 Grassy Knees: Kids' Events This Weekend
 
-## Summary (manifest `description`, ≤132; this one is 113)
+## Summary (manifest `description`, ≤132; this one is 108)
 This weekend's kids' events near you: free family events and classes from Grassy Knees in 42 US metro areas.
 
 ## Category
