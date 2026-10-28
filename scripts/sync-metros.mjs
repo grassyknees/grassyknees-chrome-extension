@@ -5,7 +5,7 @@ import { fileURLToPath } from "node:url";
 import path from "node:path";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
-const src = process.argv[2] || "/Volumes/exernal SSD/MacData/Development/little-weekend/app/cities.ts";
+const src = process.argv[2] || "../little-weekend/app/cities.ts";
 const text = readFileSync(src, "utf8");
 const re = /\{id:"([^"]+)",name:"([^"]+)",metro:"[^"]*",states:"([^"]*)",rank:\d+,population:\d+,timeZone:"([^"]+)",timeLabel:"[^"]*",lat:([-\d.]+),lng:([-\d.]+)/g;
 const rows = [...text.matchAll(re)].map(([, id, name, states, timeZone, lat, lng]) => ({ id, name, states, timeZone, lat: +lat, lng: +lng }));

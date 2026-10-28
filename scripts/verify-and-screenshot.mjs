@@ -13,7 +13,7 @@ import path from "node:path";
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const ext = path.join(root, "extension");
 const require = createRequire(import.meta.url);
-const { chromium } = require(path.join(process.env.PLAYWRIGHT_DIR || "/Volumes/exernal SSD/MacData/Development/many_sites/node_modules", "playwright"));
+const { chromium } = require(path.join(process.env.PLAYWRIGHT_DIR || "node_modules", "playwright"));
 
 // An unpacked extension's id is derived from its absolute path.
 const extId = [...createHash("sha256").update(ext).digest("hex").slice(0, 32)].map(c => String.fromCharCode(97 + parseInt(c, 16))).join("");

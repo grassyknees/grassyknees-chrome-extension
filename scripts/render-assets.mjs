@@ -7,7 +7,7 @@ import path from "node:path";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const require = createRequire(import.meta.url);
-const { chromium } = require(path.join(process.env.PLAYWRIGHT_DIR || "/Volumes/exernal SSD/MacData/Development/many_sites/node_modules", "playwright"));
+const { chromium } = require(path.join(process.env.PLAYWRIGHT_DIR || "node_modules", "playwright"));
 
 const font = readFileSync(path.join(root, "extension/fonts/manrope.woff2")).toString("base64");
 const fontCss = `@font-face{font-family:Manrope;src:url(data:font/woff2;base64,${font}) format("woff2");font-weight:200 800}`;
