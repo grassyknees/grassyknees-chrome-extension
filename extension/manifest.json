@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Grassy Knees: Kids' Events This Weekend",
+  "short_name": "Grassy Knees",
+  "version": "1.0.0",
+  "description": "This weekend's kids' events near you: free family events and classes from Grassy Knees in 42 US metro areas.",
+  "homepage_url": "https://grassyknees.com/?utm_source=chrome-extension",
+  "action": {
+    "default_title": "Kids' events this weekend",
+    "default_popup": "popup.html",
+    "default_icon": { "16": "icons/icon16.png", "32": "icons/icon32.png", "48": "icons/icon48.png", "128": "icons/icon128.png" }
+  },
+  "icons": { "16": "icons/icon16.png", "32": "icons/icon32.png", "48": "icons/icon48.png", "128": "icons/icon128.png" },
+  "permissions": ["storage"],
+  "host_permissions": ["https://grassyknees.com/*"],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'; connect-src https://grassyknees.com; img-src 'self' data:; font-src 'self'; style-src 'self' https://grassyknees.com"
+  }
+}

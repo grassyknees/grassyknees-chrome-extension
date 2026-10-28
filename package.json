@@ -1,0 +1,14 @@
+{
+  "name": "grassyknees-chrome-extension",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Chrome extension: this weekend's kids' events from grassyknees.com",
+  "scripts": {
+    "test": "node --test test/*.test.mjs",
+    "assets": "node scripts/render-assets.mjs",
+    "verify": "node scripts/verify-and-screenshot.mjs",
+    "build": "node scripts/build.mjs",
+    "sync-metros": "node scripts/sync-metros.mjs"
+  }
+}

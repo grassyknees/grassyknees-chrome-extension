@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=380">
+  <title>Grassy Knees: this weekend</title>
+  <link rel="stylesheet" href="popup.css">
+  <script type="module" src="popup.js"></script>
+</head>
+<body>
+  <header class="top">
+    <a class="brand" id="home" href="https://grassyknees.com/?utm_source=chrome-extension" target="_blank" rel="noopener">
+      <img src="icons/icon48.png" alt="" width="30" height="30">
+      <span>Grassy Knees<span class="dot">.</span></span>
+    </a>
+    <span class="range" id="range">This weekend</span>
+  </header>
+
+  <section class="controls" aria-label="Filters">
+    <div class="row">
+      <label class="metro">
+        <span class="sr">Metro area</span>
+        <select id="metro"></select>
+      </label>
+      <button type="button" id="detect" class="ghost" title="Find the metro nearest you (uses the site's coarse IP location, then your time zone)">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="7"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/></svg>
+        Detect
+      </button>
+    </div>
+    <div class="row">
+      <label class="toggle"><input type="checkbox" id="free"><span>Free only</span></label>
+      <label class="age"><span class="sr">Child's age</span><select id="age"></select></label>
+    </div>
+    <p class="hint" id="hint" hidden></p>
+  </section>
+
+  <main id="list" aria-live="polite"></main>
+
+  <footer class="bottom">
+    <a id="all" class="cta" href="https://grassyknees.com/?utm_source=chrome-extension" target="_blank" rel="noopener">See all on Grassy Knees →</a>
+    <p class="meta"><span id="status"></span> <button type="button" id="refresh" class="link">Refresh</button></p>
+  </footer>
+</body>
+</html>
